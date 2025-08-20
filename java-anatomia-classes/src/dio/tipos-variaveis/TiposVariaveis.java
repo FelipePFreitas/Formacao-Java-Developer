@@ -11,7 +11,7 @@ public class TiposVariaveis {
         
         short numeroCurto = 1;
         int numeroNormal = numeroCurto;
-        short numeroCurto2 = numeroNormal; // Da erro por que int maior que short
+        short numeroCurto2 = (short) numeroNormal; // Da erro por que int maior que short
 
     }
 
