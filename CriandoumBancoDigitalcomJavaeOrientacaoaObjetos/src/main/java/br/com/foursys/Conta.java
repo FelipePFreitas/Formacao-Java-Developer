@@ -43,7 +43,7 @@ public abstract class Conta implements ServicoConta {
         this.sacar(valor);
         contaDestino.depositar(valor);
         OffsetDateTime agora = OffsetDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss dd/MM/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         String resultado = agora.format(formatter);
         System.out.printf("Valor da transferência: %.2f Horário: %s%n", valor,resultado);
     }
